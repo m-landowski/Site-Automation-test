@@ -24,5 +24,8 @@
             ├── resources 
 ├── Driver -- folder z WebDriver`ami
      ```
+Wynik Prezentacji Testu:
+![image](https://user-images.githubusercontent.com/12528895/121078370-2c4ce680-c7d9-11eb-94df-ef488be128d9.png)
 
+Przebieg testu nagrano: https://youtu.be/AsXj4YjORss
 
