@@ -12,13 +12,16 @@ public class MainPage {
     private WebDriver driver;
     private static Logger logger = LoggerFactory.getLogger(MainPage.class);
 
-    @FindBy(linkText = "TV + INTERNET")
-    WebElement txtMenuTVInternet;
+    //@FindBy(linkText = "TV + INTERNET")
+    @FindBy(xpath = "//a[contains(text(),'TV + Internet')]")
+    WebElement txtMenuTVInternet; //
 
-    @FindBy(linkText = "INTERNET")
+    //@FindBy(linkText = "INTERNET")
+    @FindBy(xpath = "(//a[contains(text(),'Internet')])[2]")
     WebElement txtMenuInternet;
 
-    @FindBy(linkText = "KONTAKT")
+    //@FindBy(linkText = "KONTAKT")
+    @FindBy(xpath = "(//a[contains(text(),'KONTAKT')])[3]")
     WebElement txtMenuKontakt;
 
     public MainPage(WebDriver driver) {
