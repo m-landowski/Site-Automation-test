@@ -11,7 +11,7 @@ public class BrowserSetup {
         switch (browser) {
             case "chrome": {
                 System.out.println("===Run Browser Chrome");
-                System.setProperty("webdriver.chrome.driver", "Driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "Driver\\chromedriver");
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless");
@@ -22,7 +22,7 @@ public class BrowserSetup {
             break;
             case "firefox": {
                 System.out.println("=== Run Browser Firefox");
-                System.setProperty("webdriver.gecko.driver", "Driver\\geckodriver.exe"); //driver w Wersji 0.29.0 (2021-01-14
+                System.setProperty("webdriver.gecko.driver", "Driver\\geckodriver"); //driver w Wersji 0.29.0 (2021-01-14
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
